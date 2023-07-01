@@ -1,0 +1,3 @@
+require("scripts")
+print("hello")
+
