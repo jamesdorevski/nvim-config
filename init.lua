@@ -1,3 +1,2 @@
 require("scripts")
-print("hello")
 
