@@ -53,4 +53,6 @@ return require('packer').startup(function(use)
   }
 
   use 'voldikss/vim-floaterm'
+  use 'simrat39/rust-tools.nvim'
+
 end)
