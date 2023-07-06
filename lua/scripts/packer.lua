@@ -39,8 +39,8 @@ return require('packer').startup(function(use)
       -- Autocompletion
       {'hrsh7th/nvim-cmp'},     -- Required
       {'hrsh7th/cmp-nvim-lsp'}, -- Required
-      {'L3MON4D3/LuaSnip'},     -- Required
-  }
+      {'L3MON4D3/LuaSnip'},-- Required
+    }
   }
 
   use {
@@ -53,6 +53,5 @@ return require('packer').startup(function(use)
   }
 
   use 'voldikss/vim-floaterm'
-  use 'simrat39/rust-tools.nvim'
 
 end)
