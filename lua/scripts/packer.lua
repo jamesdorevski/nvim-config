@@ -9,9 +9,9 @@ return require('packer').startup(function(use)
   }
  
   use({
-    "morhetz/gruvbox",
+    "folke/tokyonight.nvim",
     config = function()
-        vim.cmd("colorscheme gruvbox")
+        vim.cmd("colorscheme tokyonight-storm")
     end
   })
 
