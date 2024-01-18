@@ -9,9 +9,9 @@ return require('packer').startup(function(use)
   }
  
   use({
-    "folke/tokyonight.nvim",
+    "Rigellute/rigel",
     config = function()
-        vim.cmd("colorscheme tokyonight-storm")
+        vim.cmd("colorscheme rigel")
     end
   })
 
@@ -53,10 +53,7 @@ return require('packer').startup(function(use)
   }
 
   use 'voldikss/vim-floaterm'
-
   use 'mfussenegger/nvim-dap'
-
-  use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
   use 'romgrk/barbar.nvim'
 
 end)
