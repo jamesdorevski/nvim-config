@@ -7,8 +7,8 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
- 
-  use({
+
+ use({
     "Rigellute/rigel",
     config = function()
         vim.cmd("colorscheme rigel")
@@ -17,8 +17,6 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-  use('ThePrimeagen/harpoon')
-  
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
 
@@ -52,8 +50,6 @@ return require('packer').startup(function(use)
       end
   }
 
-  use 'voldikss/vim-floaterm'
   use 'mfussenegger/nvim-dap'
-  use 'romgrk/barbar.nvim'
 
 end)
