@@ -8,11 +8,18 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
- use({
-    "Rigellute/rigel",
-    config = function()
-        vim.cmd("colorscheme rigel")
-    end
+--  use({
+--      "Rigellute/rigel",
+--      config = function()
+--          vim.cmd("colorscheme rigel")
+--      end
+--  })
+
+  use ({
+      "ellisonleao/gruvbox.nvim",
+      config = function()
+          vim.cmd("colorscheme gruvbox")
+      end
   })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -51,5 +58,7 @@ return require('packer').startup(function(use)
   }
 
   use 'mfussenegger/nvim-dap'
+
+  use 'github/copilot.vim'
 
 end)
